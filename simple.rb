@@ -14,12 +14,12 @@ Disallow:
 END
 
 ## gems
-gem 'haml',                             :version => ">=2.2.17"
-gem 'sqlite3-ruby',  :lib => 'sqlite3', :version => ">=1.2.5"
-gem 'rspec',         :lib => false,     :version => ">=1.3.0"
-gem 'rspec-rails',   :lib => false,     :version => ">=1.3.2"
-gem 'factory_girl',                     :version => ">=1.2.3"
-rake 'gems:install', :sudo => false
+gem 'haml'
+gem 'sqlite3-ruby',  :lib => 'sqlite3'
+gem 'rspec',         :lib => false
+gem 'rspec-rails',   :lib => false
+gem 'factory_girl'
+rake 'gems:install'
 run "haml --rails #{@root}"
 
 ## rspec
